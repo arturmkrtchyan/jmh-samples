@@ -50,6 +50,11 @@ questions.
             <version>${jmh.version}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.iban4j</groupId>
+            <artifactId>iban4j</artifactId>
+            <version>2.2.0</version>
+        </dependency>
     </dependencies>
 
     <properties>

@@ -51,10 +51,15 @@ public class MyBenchmark {
 
     @Benchmark
     @Warmup(iterations = 5, time = 4, timeUnit = TimeUnit.SECONDS)
+    public int one_baseline() {
+        return 1;
+    }
+
+    @Benchmark
+    @Warmup(iterations = 5, time = 4, timeUnit = TimeUnit.SECONDS)
     public int constant() {
         return 199;
     }
-
 
     @Benchmark
     @Warmup(iterations = 5, time = 4, timeUnit = TimeUnit.SECONDS)
